@@ -60,5 +60,3 @@ function keyPressed () {
     }
   }
 }
-
-// Learn foreach
