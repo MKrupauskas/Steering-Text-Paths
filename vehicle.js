@@ -2,6 +2,11 @@
 // Steering text paths
 // inspiration Daniel Shiffman
 
+var redC = 255;
+var greenC = 255;
+var blueC = 0;
+
+
 function Vehicle(x, y) {
   this.pos = createVector(random(width), random(height));
   this.target = createVector(x, y);
@@ -36,7 +41,8 @@ Vehicle.prototype.update = function() {
 
 Vehicle.prototype.show = function() {
   strokeWeight(this.r);
-  stroke(255, 255, 78);
+  // stroke(redC, 100%, 50%);
+  stroke(redC, greenC, blueC);
   point(this.pos.x, this.pos.y);
 }
 
@@ -71,3 +77,14 @@ Vehicle.prototype.flee = function(target) {
 Vehicle.prototype.newTarget = function(x, y) {
   this.target = createVector(x, y);
 }
+
+function changeRed(newValue) {
+  redC = newValue;
+}
+function changeGreen(newValue) {
+  greenC = newValue;
+}
+function changeBlue(newValue) {
+  blueC = newValue;
+}
+

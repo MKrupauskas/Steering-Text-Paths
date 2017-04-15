@@ -16,6 +16,8 @@ function preload() {
 }
 
 function setup() {
+colorMode(HSB);
+  
   createCanvas(1000, 300);
   background(200, 50, 50);
 
