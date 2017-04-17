@@ -4,7 +4,7 @@
 
 var colorValue = 56;
 
-function Vehicle(x, y) {
+function Vehicle(x, y) { // Setting up object
   this.pos = createVector(random(width), random(height));
   this.target = createVector(x, y);
   this.vel = p5.Vector.random2D();

@@ -16,10 +16,10 @@ function preload() {
 }
 
 function setup() {
-colorMode(HSB);
-  
+  colorMode(HSB);
+
   createCanvas(1000, 300);
-  background(200, 50, 50);
+  background(0, 80.39, 100);
 
   points2 = font.textToPoints(word, 50, 200, 192, {sampleFactor: 0.25});
 
@@ -40,10 +40,9 @@ function draw() {
   }
 }
 
-function mousePressed() {
+function mousePressed() { // Mouse button functionality
   word = 'STOP';
   points = font.textToPoints(word, 250, 200, 192, {sampleFactor: 0.25});
-
 
   for (var i = 0; i < vehicles.length; i++) {
     vehicles[i].newTarget(random(width), 0);
@@ -54,7 +53,7 @@ function mousePressed() {
   }
 }
 
-function keyPressed () {
+function keyPressed () { // Spacebar functionality
   if (keyCode === 32) {
     for (var i = 0; i < points2.length; i++) {
       pt = points2[i];
