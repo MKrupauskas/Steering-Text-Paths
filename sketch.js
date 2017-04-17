@@ -19,7 +19,6 @@ function setup() {
   colorMode(HSB);
 
   createCanvas(1000, 300);
-  background(0, 80, 100);
 
   points2 = font.textToPoints(word, 50, 200, 192, {sampleFactor: 0.25});
 
@@ -31,7 +30,7 @@ function setup() {
 }
 
 function draw() {
-  background(200, 50, 50);
+  background(0, 80, 100);
   for (var i = 0; i < vehicles.length; i++) {
     var v = vehicles[i];
     v.behaviors();
