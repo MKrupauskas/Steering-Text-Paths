@@ -19,7 +19,7 @@ function setup() {
   colorMode(HSB);
 
   createCanvas(1000, 300);
-  background(0, 80.39, 100);
+  background(0, 80, 100);
 
   points2 = font.textToPoints(word, 50, 200, 192, {sampleFactor: 0.25});
 
