@@ -30,7 +30,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 80, 100);
+  background(0, 80, 80);
   for (var i = 0; i < vehicles.length; i++) {
     var v = vehicles[i];
     v.behaviors();
