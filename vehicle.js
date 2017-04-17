@@ -2,7 +2,9 @@
 // Steering text paths
 // inspiration Daniel Shiffman
 
-var colorValue = 56;
+var colorValue = 0;
+var colorB = 100;
+var colorS = 0;
 
 function Vehicle(x, y) { // Setting up object
   this.pos = createVector(random(width), random(height));
@@ -38,7 +40,7 @@ Vehicle.prototype.update = function() {
 
 Vehicle.prototype.show = function() {
   strokeWeight(this.r);
-  stroke(colorValue, 60, 60);
+  stroke(colorValue, colorS, colorB);
   point(this.pos.x, this.pos.y);
 }
 
@@ -76,4 +78,6 @@ Vehicle.prototype.newTarget = function(x, y) {
 
 function changeColor(newValue) {
   colorValue = newValue;
+  colorB = 60;
+  colorS = 60;
 }
