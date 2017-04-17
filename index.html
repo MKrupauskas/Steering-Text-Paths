@@ -34,9 +34,8 @@
     text-align:center
   }
   input {
-    background-color: red;
+    width: 200px;
   }
-
   </style>
 </head>
 
@@ -44,7 +43,7 @@
   <h1>Try pressing spacebar and the left mouse button.</br>Use the slider to adjust the color.</h1>
 
   <div id="inputs">
-  <input type="range"  min="0" max="360" width="200px" oninput="changeColor(this.value)"/>
+  <input type="range"  min="0" max="360" oninput="changeColor(this.value)"/>
   </div>
 </body>
 </html>
