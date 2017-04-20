@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "font";
+  src: url(AvenirNextLTPro-Demi.otf);
+}
+body {
+  padding: 0;
+  margin: 0;
+  }
+h1, h2 {
+  margin: 0.5em;
+  text-align: center;
+  font-family: "font";
+}
+h1 {
+  font-size: 4em;
+  margin-top: 3px;
+}
+#paper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#inputs {
+  text-align: center
+}
+input {
+  width: 350px;
+  margin-bottom: 15px;
+}
