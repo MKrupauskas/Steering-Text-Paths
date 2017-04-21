@@ -36,8 +36,8 @@ input {
   margin-bottom: 15px;
 }
 #textInput {
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 150px;
 }
 a:link, a:visited, a:hover {
     color: rgb(180, 100, 100);
