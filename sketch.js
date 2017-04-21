@@ -39,18 +39,19 @@ function draw() {
 }
 
 function mousePressed() { // Mouse button functionality
-  word = 'STOP';
-  points = font.textToPoints(word, 250, 200, 192, {sampleFactor: 0.25});
+  if (mouseX <= 1000 && mouseX >= 0 && mouseY <= 300 && mouseY >= 0) {
+    word = 'STOP';
+    points = font.textToPoints(word, 250, 200, 192, {sampleFactor: 0.25});
 
-  for (var i = 0; i < vehicles.length; i++) {
-    vehicles[i].newTarget(random(width), 0);
-  }
-  for (var i = 0; i < points.length; i++) {
-    pt2 = points[i];
-    vehicles[i].newTarget(pt2.x, pt2.y);
+    for (var i = 0; i < vehicles.length; i++) {
+      vehicles[i].newTarget(random(width), 0);
+    }
+    for (var i = 0; i < points.length; i++) {
+      pt2 = points[i];
+      vehicles[i].newTarget(pt2.x, pt2.y);
+    }
   }
 }
-
 function keyPressed () { // Spacebar functionality
   if (keyCode === 32) {
     for (var i = 0; i < points2.length; i++) {
