@@ -35,3 +35,7 @@ input {
   width: 350px;
   margin-bottom: 15px;
 }
+#textInput {
+  height: 10px;
+  width: 10px;
+}
