@@ -25,7 +25,9 @@ Vehicle.prototype.behaviors = function () {
   flee.mult(5);
 
   this.applyForce(arrive);
+  if (mouseX <= 1000 && mouseX >= 0 && mouseY <= 300 && mouseY >= 0) {
   this.applyForce(flee);
+}
 }
 
 Vehicle.prototype.applyForce = function(f) {

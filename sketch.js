@@ -43,7 +43,7 @@ function draw() {
 function mousePressed() { // Mouse button functionality
   if (mouseX <= 1000 && mouseX >= 0 && mouseY <= 300 && mouseY >= 0) {
     points2 = font.textToPoints(word, 50, 200, 192, {sampleFactor: 0.25});
-    
+
     for (var i = 0; i < vehicles.length; i++) {
       vehicles[i].newTarget(random(width), 0);
     }
@@ -67,3 +67,4 @@ function keyPressed () { // Spacebar functionality
       }
   }
 }
+// ¯\_('_')_/¯
