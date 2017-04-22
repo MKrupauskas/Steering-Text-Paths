@@ -23,7 +23,7 @@ function setup() {
 
   for (var i = 0; i < points2.length; i++) {
     pt = points2[i];
-    vehicle = new Vehicle(random(width), 0);
+    vehicle = new Vehicle(random(width), -5);
     vehicles.push(vehicle);
   }
 }
@@ -44,7 +44,7 @@ function mousePressed() { // Mouse button functionality
     points2 = font.textToPoints(word, 50, 200, 192, {sampleFactor: 0.25});
 
     for (var i = 0; i < vehicles.length; i++) {
-      vehicles[i].newTarget(random(width), 0);
+      vehicles[i].newTarget(random(width), -5);
     }
     for (var i = 0; i < points2.length; i++) {
       pt = points2[i];
@@ -58,7 +58,7 @@ function keyPressed () { // Spacebar functionality
     points = font.textToPoints("STOP", 250, 200, 192, {sampleFactor: 0.25});
 
       for (var i = 0; i < vehicles.length; i++) {
-        vehicles[i].newTarget(random(width), 0);
+        vehicles[i].newTarget(random(width), -5);
       }
       for (var i = 0; i < points.length; i++) {
         pt2 = points[i];
