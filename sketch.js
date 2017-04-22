@@ -48,7 +48,8 @@ function mousePressed() { // Mouse button functionality
 }
 function keyPressed () { // Spacebar functionality
   if (keyCode === 32) {
-    word = 'STOP';
+    word = document.getElementById("textInput").value;
+    // word = 'STOP';
     points = font.textToPoints(word, 250, 200, 192, {sampleFactor: 0.25});
 
     for (var i = 0; i < vehicles.length; i++) {
