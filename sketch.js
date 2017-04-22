@@ -36,12 +36,11 @@ function draw() {
     v.update();
     v.show();
   }
-
-  word = document.getElementById("textInput").value;
 }
 
 function mousePressed() { // Mouse button functionality
-  if (mouseX <= 1000 && mouseX >= 0 && mouseY <= 300 && mouseY >= 0) {
+  word = document.getElementById("textInput").value;
+  if (mouseX <= 1000 && mouseX >= 0 && mouseY <= 300 && mouseY >= -50) {
     points2 = font.textToPoints(word, 50, 200, 192, {sampleFactor: 0.25});
 
     for (var i = 0; i < vehicles.length; i++) {
@@ -67,4 +66,5 @@ function keyPressed () { // Spacebar functionality
       }
   }
 }
+
 // ¯\_('_')_/¯
