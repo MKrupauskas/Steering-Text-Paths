@@ -10,18 +10,7 @@ var points2, pt;
 var points, pt2;
 var vehicle;
 var testing;
-var eggg = "('_')_/¯", egggg = "¯\_";
-
-//getElementById("easterEgg").click = function() document.getElementById("textInput").value; = "¯\_('_')_/¯"};
-var el = document.getElementById("egg");
-if (el) {
-el.addEventListener('click', clickCheck);
-}
-
-function clickCheck(){
-  document.getElementById("textInput").value = egggg + eggg;
-}
-
+var easterEgg = "¯\\_('_')_/¯";
 
 function preload() {
   font = loadFont('AvenirNextLTPro-Demi.otf');
@@ -30,6 +19,8 @@ function preload() {
 function setup() {
   colorMode(HSB);
   createCanvas(1000, 300);
+
+  document.getElementById("header").onclick = function() {document.getElementById("textInput").value = easterEgg; mousePressed();} // Easter egg
 
   points2 = font.textToPoints(word, 50, 200, 192, {sampleFactor: 0.25});
 
