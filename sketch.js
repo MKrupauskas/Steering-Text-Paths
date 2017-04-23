@@ -11,6 +11,7 @@ var points, pt2;
 var vehicle;
 var testing;
 var easterEgg = "¯\\_('_')_/¯";
+var center = [450, 390, 340, 300, 270, 210, 160, 90, 50, 30];
 
 function preload() {
   font = loadFont('AvenirNextLTPro-Demi.otf');
@@ -44,7 +45,7 @@ function draw() {
 function mousePressed() { // Mouse button functionality
   word = document.getElementById("textInput").value;
   if (mouseX < 295 || mouseY < -73 || mouseX > 645 ||  mouseY > -45) {
-    points2 = font.textToPoints(word, 50, 200, 192, {sampleFactor: 0.25});
+    points2 = font.textToPoints(word, center[word.length - 1], 200, 192, {sampleFactor: 0.25});
 
     for (var i = 0; i < vehicles.length; i++) {
       vehicles[i].newTarget(random(width), -5);
