@@ -10,6 +10,18 @@ var points2, pt;
 var points, pt2;
 var vehicle;
 var testing;
+var eggg = "('_')_/¯", egggg = "¯\_";
+
+//getElementById("easterEgg").click = function() document.getElementById("textInput").value; = "¯\_('_')_/¯"};
+var el = document.getElementById("egg");
+if (el) {
+el.addEventListener('click', clickCheck);
+}
+
+function clickCheck(){
+  document.getElementById("textInput").value = egggg + eggg;
+}
+
 
 function preload() {
   font = loadFont('AvenirNextLTPro-Demi.otf');
@@ -40,7 +52,7 @@ function draw() {
 
 function mousePressed() { // Mouse button functionality
   word = document.getElementById("textInput").value;
-  if (mouseX <= 1000 && mouseX >= 0 && mouseY <= 300 && mouseY >= -50) {
+  if (mouseX < 295 || mouseY < -73 || mouseX > 645 ||  mouseY > -45) {
     points2 = font.textToPoints(word, 50, 200, 192, {sampleFactor: 0.25});
 
     for (var i = 0; i < vehicles.length; i++) {
@@ -66,5 +78,3 @@ function keyPressed () { // Spacebar functionality
       }
   }
 }
-
-// ¯\_('_')_/¯
