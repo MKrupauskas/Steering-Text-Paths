@@ -11,7 +11,7 @@ var points, pt2;
 var vehicle;
 var testing;
 var easterEgg = "¯\\_('_')_/¯";
-var center = [450, 390, 340, 300, 270, 210, 160, 90, 50, 30];
+var center = [450, 390, 340, 300, 270, 210, 160, 90, 50, 30, 110];
 
 function preload() {
   font = loadFont('AvenirNextLTPro-Demi.otf');
