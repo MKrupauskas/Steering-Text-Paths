@@ -2,16 +2,15 @@
 // Steering text paths
 // Inspired by Daniel Shiffman
 
-var font;
-var vehicles = [];
-var word = "Patyčioms";
-var textBool = false;
-var points2, pt;
-var points, pt2;
-var vehicle;
-var testing;
-var easterEgg = "¯\\_('_')_/¯";
-var center = [450, 390, 340, 300, 270, 210, 160, 90, 50, 30, 110];
+let font;
+let vehicles = [];
+let word = "Patyčioms";
+let textBool = false;
+let points2, pt;
+let points, pt2;
+let vehicle;
+const easterEgg = "¯\\_('_')_/¯";
+const center = [450, 390, 340, 300, 270, 210, 160, 90, 50, 30, 110];
 
 function preload() {
   font = loadFont("AvenirNextLTPro-Demi.otf");
