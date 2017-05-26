@@ -2,9 +2,9 @@
 // Steering text paths
 // inspiration Daniel Shiffman
 
-var colorValue = 0;
-var colorB = 100;
-var colorS = 0;
+let colorValue = 0;
+let colorB = 100;
+let colorS = 0;
 
 function Vehicle(x, y) {
   // Setting up object
