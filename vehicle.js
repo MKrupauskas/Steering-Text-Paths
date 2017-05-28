@@ -5,6 +5,9 @@
 let colorValue = 0;
 let colorB = 100;
 let colorS = 0;
+let arrive;
+let mouse;
+let flee;
 
 function Vehicle(x, y) {
   // Setting up object
@@ -18,9 +21,9 @@ function Vehicle(x, y) {
 }
 
 Vehicle.prototype.behaviors = function() {
-  var arrive = this.arrive(this.target);
-  var mouse = createVector(mouseX, mouseY);
-  var flee = this.flee(mouse);
+  arrive = this.arrive(this.target);
+  mouse = createVector(mouseX, mouseY);
+  flee = this.flee(mouse);
 
   arrive.mult(0.6);
   flee.mult(5);
