@@ -27,17 +27,18 @@ function setup() {
 
   points2 = font.textToPoints(word, 50, 200, 192, { sampleFactor: 0.25 });
 
-  for (var i = 0; i < points2.length; i++) {
+  for (let i = 0; i < points2.length; i++) {
     pt = points2[i];
     vehicle = new Vehicle(random(width), -5);
     vehicles.push(vehicle);
   }
 }
 
-function draw() {
+function
+draw() {
   background(2, 70, 70);
-  for (var i = 0; i < vehicles.length; i++) {
-    var v = vehicles[i];
+  for (let i = 0; i < vehicles.length; i++) {
+    let v = vehicles[i];
     v.behaviors();
     v.update();
     v.show();
@@ -52,10 +53,10 @@ function mousePressed() {
       sampleFactor: 0.25
     });
 
-    for (var i = 0; i < vehicles.length; i++) {
+    for (let i = 0; i < vehicles.length; i++) {
       vehicles[i].newTarget(random(width), -5);
     }
-    for (var i = 0; i < points2.length; i++) {
+    for (let i = 0; i < points2.length; i++) {
       pt = points2[i];
       vehicles[i].newTarget(pt.x, pt.y);
     }
@@ -66,10 +67,10 @@ function keyPressed() {
   if (keyCode === 32) {
     points = font.textToPoints("STOP", 250, 200, 192, { sampleFactor: 0.25 });
 
-    for (var i = 0; i < vehicles.length; i++) {
+    for (let i = 0; i < vehicles.length; i++) {
       vehicles[i].newTarget(random(width), -5);
     }
-    for (var i = 0; i < points.length; i++) {
+    for (let i = 0; i < points.length; i++) {
       pt2 = points[i];
       vehicles[i].newTarget(pt2.x, pt2.y);
     }
