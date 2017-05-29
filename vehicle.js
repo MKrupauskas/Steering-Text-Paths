@@ -51,25 +51,25 @@ Vehicle.prototype.show = function() {
 };
 
 Vehicle.prototype.arrive = function(target) {
-  var desired = p5.Vector.sub(target, this.pos);
-  var d = desired.mag();
-  var speed = this.maxspeed;
+  let desired = p5.Vector.sub(target, this.pos);
+  let d = desired.mag();
+  let speed = this.maxspeed;
   if (d < 100) {
     speed = map(d, 0, 100, 0, this.maxspeed);
   }
   desired.setMag(speed);
-  var steer = p5.Vector.sub(desired, this.vel);
+  let steer = p5.Vector.sub(desired, this.vel);
   steer.limit(this.maxForce);
   return steer;
 };
 
 Vehicle.prototype.flee = function(target) {
-  var desired = p5.Vector.sub(target, this.pos);
-  var d = desired.mag();
+  let desired = p5.Vector.sub(target, this.pos);
+  let d = desired.mag();
   if (d < 50) {
     desired.setMag(this.maxspeed);
     desired.mult(-1);
-    var steer = p5.Vector.sub(desired, this.vel);
+    let steer = p5.Vector.sub(desired, this.vel);
     steer.limit(this.maxForce);
     return steer;
   } else {
