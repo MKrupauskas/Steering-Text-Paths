@@ -1,29 +1,28 @@
 <html>
-<head>
-  <title>Steering Text Paths</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-  <!-- uncomment lines below to include extra p5 libraries -->
-  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
-  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
-  <script language="javascript" type="text/javascript" src="sketch.js"></script>
-  <script language="javascript" type="text/javascript" src="vehicle.js"></script>
 
-  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+<head>
+    <title>Steering Text Paths</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="vehicle.js"></script>
+
 </head>
 
 <body>
-  <h1 id="header">Steering text paths</h1>
-  <h2>Try pressing spacebar and the left mouse button.</br>Use the slider to adjust the color.</h2>
-  <div id="paper">
-    <h2>Agent steering behaviour based on a <a href="http://www.red3d.com/cwr/steer/gdc99/" target="_blank">scientific paper</a> by Craig W. Reynolds</h2>
-  </div>
-  <div id="inputs">
-  <input type="range"  min="0" max="360" oninput="changeColor(this.value)"/>
-  </div>
-  <div id="inputs">
-  <input type="text" id="textInput" value="Patyčioms" oninput="mousePressed()" onchange="mousePressed" style="text-align: center;"></input>
-  </div>
+    <h1 id="header">Steering text paths</h1>
+    <h2>Try pressing spacebar and the left mouse button.</br>Use the slider to adjust the color.</h2>
+    <div id="paper">
+        <h2>Agent steering behaviour based on a
+            <a href="http://www.red3d.com/cwr/steer/gdc99/" target="_blank">scientific paper</a> by Craig W. Reynolds</h2>
+    </div>
+    <div id="inputs">
+        <input type="range" min="0" max="360" oninput="changeColor(this.value)" />
+    </div>
+    <div id="inputs">
+        <input type="text" id="textInput" value="Patyčioms" oninput="mousePressed()" onchange="mousePressed" style="text-align: center;"></input>
+    </div>
 </body>
+
 </html>
