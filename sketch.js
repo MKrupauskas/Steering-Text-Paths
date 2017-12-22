@@ -34,8 +34,7 @@ function setup() {
   }
 }
 
-function
-draw() {
+function draw() {
   background(2, 70, 70);
   for (let i = 0; i < vehicles.length; i++) {
     let v = vehicles[i];
