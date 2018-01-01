@@ -86,3 +86,5 @@ function changeColor(newValue) {
   colorB = 60;
   colorS = 60;
 }
+
+
